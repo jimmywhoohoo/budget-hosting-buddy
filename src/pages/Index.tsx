@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import { ArrowRight, Server, Shield, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -19,11 +20,11 @@ const Index = () => {
             Deploy your website in seconds with our ultra-low-cost hosting powered by Vultr infrastructure.
           </p>
           <div className="flex justify-center gap-4">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90">
-              Start Hosting <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90" asChild>
+              <Link to="/pricing">Start Hosting <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
-            <Button size="lg" variant="outline">
-              View Pricing
+            <Button size="lg" variant="outline" asChild>
+              <Link to="/pricing">View Pricing</Link>
             </Button>
           </div>
         </div>
