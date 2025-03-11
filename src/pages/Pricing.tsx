@@ -3,8 +3,16 @@ import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { toast } from "@/components/ui/use-toast";
 
 const Pricing = () => {
+  const handleGetStarted = (plan: string) => {
+    toast({
+      title: "Plan Selected",
+      description: `You've selected the ${plan} plan. This would start the signup process.`,
+    });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Navbar />
@@ -20,7 +28,12 @@ const Pricing = () => {
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 25GB SSD Storage</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 1TB Bandwidth</li>
             </ul>
-            <Button className="w-full">Get Started</Button>
+            <Button 
+              className="w-full" 
+              onClick={() => handleGetStarted("Starter")}
+            >
+              Get Started
+            </Button>
           </Card>
           <Card className="p-6 border-secondary">
             <h3 className="text-xl font-semibold mb-2">Pro</h3>
@@ -31,7 +44,12 @@ const Pricing = () => {
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 50GB SSD Storage</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 2TB Bandwidth</li>
             </ul>
-            <Button className="w-full bg-secondary hover:bg-secondary/90">Get Started</Button>
+            <Button 
+              className="w-full bg-secondary hover:bg-secondary/90" 
+              onClick={() => handleGetStarted("Pro")}
+            >
+              Get Started
+            </Button>
           </Card>
           <Card className="p-6">
             <h3 className="text-xl font-semibold mb-2">Business</h3>
@@ -42,7 +60,12 @@ const Pricing = () => {
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 100GB SSD Storage</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 4TB Bandwidth</li>
             </ul>
-            <Button className="w-full">Get Started</Button>
+            <Button 
+              className="w-full" 
+              onClick={() => handleGetStarted("Business")}
+            >
+              Get Started
+            </Button>
           </Card>
         </div>
       </div>

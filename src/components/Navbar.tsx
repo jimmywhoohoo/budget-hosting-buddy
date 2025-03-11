@@ -18,8 +18,8 @@ const Navbar = () => {
           <Link to="/features" className="text-gray-600 hover:text-gray-900 transition-colors">
             Features
           </Link>
-          <Button variant="default" className="bg-secondary hover:bg-secondary/90">
-            Get Started
+          <Button variant="default" className="bg-secondary hover:bg-secondary/90" asChild>
+            <Link to="/pricing">Get Started</Link>
           </Button>
         </div>
       </div>
