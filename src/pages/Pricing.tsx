@@ -3,14 +3,14 @@ import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import { toast } from "@/components/ui/use-toast";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
+  const navigate = useNavigate();
+
   const handleGetStarted = (plan: string) => {
-    toast({
-      title: "Plan Selected",
-      description: `You've selected the ${plan} plan. This would start the signup process.`,
-    });
+    // Navigate to payment page with the selected plan
+    navigate("/payment", { state: { plan } });
   };
 
   return (
