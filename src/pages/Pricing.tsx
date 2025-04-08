@@ -101,10 +101,10 @@ const Pricing = () => {
         {/* WordPress Hosting Plans */}
         <h2 className="text-2xl font-semibold text-center mb-8">WordPress Hosting</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <Card className="p-6">
+          <Card className="p-6 border-dashed border-gray-300">
             <Badge className="mb-2 bg-green-100 text-green-800 hover:bg-green-100">WordPress</Badge>
             <h3 className="text-xl font-semibold mb-2">WP Basic</h3>
-            <div className="text-3xl font-bold mb-4">$4.99<span className="text-lg text-gray-600">/mo</span></div>
+            <div className="text-3xl font-bold mb-4">$1<span className="text-lg text-gray-600">/mo</span></div>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 10GB SSD Storage</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 1 WordPress Site</li>
