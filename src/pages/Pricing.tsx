@@ -20,21 +20,21 @@ const Pricing = () => {
       <Navbar />
       <div className="container mx-auto px-4 pt-20 pb-20">
         <h1 className="text-4xl font-bold text-center mb-4">Simple, Transparent Pricing</h1>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Choose the perfect hosting solution for your needs with our affordable plans. All plans include 24/7 support and a 99.9% uptime guarantee.</p>
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Choose the perfect hosting solution for your needs with our affordable NZ-based plans. All plans include 24/7 support and a 99.9% uptime guarantee.</p>
         
         {/* Basic Web Hosting Plans */}
-        <h2 className="text-2xl font-semibold text-center mb-8">Web Hosting</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8">NZ Web Hosting</h2>
         <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto mb-16">
           {/* $1 Plan */}
           <Card className="p-6 border-dashed border-gray-300">
             <Badge className="mb-2 bg-blue-100 text-blue-800 hover:bg-blue-100">Basic</Badge>
-            <h3 className="text-xl font-semibold mb-2">Mini</h3>
+            <h3 className="text-xl font-semibold mb-2">Mini Kiwi</h3>
             <div className="text-3xl font-bold mb-4">$1<span className="text-lg text-gray-600">/mo</span></div>
             <ul className="space-y-3 mb-6">
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 500MB Storage</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 1GB Bandwidth</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 4GB Storage</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 1 Website</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Free SSL</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Free SSL & NZ Support</li>
             </ul>
             <Button 
               className="w-full" 
@@ -45,13 +45,14 @@ const Pricing = () => {
           </Card>
 
           <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Starter</h3>
+            <Badge className="mb-2 bg-green-100 text-green-800 hover:bg-green-100">Popular</Badge>
+            <h3 className="text-xl font-semibold mb-2">Starter Buzzy</h3>
             <div className="text-3xl font-bold mb-4">$2.99<span className="text-lg text-gray-600">/mo</span></div>
             <ul className="space-y-3 mb-6">
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 1GB RAM</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 1 CPU Core</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 25GB SSD Storage</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 1TB Bandwidth</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 5 Websites</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> NZ Data Centre</li>
             </ul>
             <Button 
               className="w-full" 
@@ -63,15 +64,16 @@ const Pricing = () => {
           
           <Card className="p-6 border-secondary relative overflow-hidden">
             <div className="absolute -right-8 -top-8 bg-secondary text-white rotate-45 px-10 py-1 text-xs font-medium">
-              Popular
+              Best Value
             </div>
-            <h3 className="text-xl font-semibold mb-2">Pro</h3>
+            <Badge className="mb-2 bg-orange-100 text-orange-800 hover:bg-orange-100">Pro</Badge>
+            <h3 className="text-xl font-semibold mb-2">Pro Tui</h3>
             <div className="text-3xl font-bold mb-4">$5.99<span className="text-lg text-gray-600">/mo</span></div>
             <ul className="space-y-3 mb-6">
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 2GB RAM</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 2 CPU Cores</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 50GB SSD Storage</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 2TB Bandwidth</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Websites</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Priority NZ Support</li>
             </ul>
             <Button 
               className="w-full bg-secondary hover:bg-secondary/90" 
@@ -82,13 +84,14 @@ const Pricing = () => {
           </Card>
 
           <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Business</h3>
+            <Badge className="mb-2 bg-purple-100 text-purple-800 hover:bg-purple-100">Business</Badge>
+            <h3 className="text-xl font-semibold mb-2">Business Kakapo</h3>
             <div className="text-3xl font-bold mb-4">$9.99<span className="text-lg text-gray-600">/mo</span></div>
             <ul className="space-y-3 mb-6">
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 4GB RAM</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 4 CPU Cores</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 100GB SSD Storage</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 4TB Bandwidth</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Websites</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Premium NZ Support</li>
             </ul>
             <Button 
               className="w-full" 
@@ -100,17 +103,17 @@ const Pricing = () => {
         </div>
 
         {/* WordPress Hosting Plans */}
-        <h2 className="text-2xl font-semibold text-center mb-8">WordPress Hosting</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8">NZ WordPress Hosting</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
           <Card className="p-6 border-dashed border-gray-300">
             <Badge className="mb-2 bg-green-100 text-green-800 hover:bg-green-100">WordPress</Badge>
-            <h3 className="text-xl font-semibold mb-2">WP Basic</h3>
+            <h3 className="text-xl font-semibold mb-2">WP Piwakawaka</h3>
             <div className="text-3xl font-bold mb-4">$1<span className="text-lg text-gray-600">/mo</span></div>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 10GB SSD Storage</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 1 WordPress Site</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Free WordPress Themes</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Auto WordPress Updates</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> NZ WordPress Themes</li>
             </ul>
             <Button 
               className="w-full" 
@@ -125,13 +128,13 @@ const Pricing = () => {
               Popular
             </div>
             <Badge className="mb-2 bg-green-100 text-green-800 hover:bg-green-100">WordPress</Badge>
-            <h3 className="text-xl font-semibold mb-2">WP Plus</h3>
+            <h3 className="text-xl font-semibold mb-2">WP Kea</h3>
             <div className="text-3xl font-bold mb-4">$7.99<span className="text-lg text-gray-600">/mo</span></div>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 20GB SSD Storage</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 3 WordPress Sites</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Premium WP Themes</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Automated Backups</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Premium NZ Themes</li>
             </ul>
             <Button 
               className="w-full bg-secondary hover:bg-secondary/90" 
@@ -143,13 +146,13 @@ const Pricing = () => {
 
           <Card className="p-6">
             <Badge className="mb-2 bg-green-100 text-green-800 hover:bg-green-100">WordPress</Badge>
-            <h3 className="text-xl font-semibold mb-2">WP Pro</h3>
+            <h3 className="text-xl font-semibold mb-2">WP Huia</h3>
             <div className="text-3xl font-bold mb-4">$12.99<span className="text-lg text-gray-600">/mo</span></div>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 40GB SSD Storage</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
               <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 10 WordPress Sites</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> WooCommerce Support</li>
-              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Staging Environment</li>
+              <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> WooCommerce + NZ Support</li>
             </ul>
             <Button 
               className="w-full" 
@@ -161,7 +164,7 @@ const Pricing = () => {
         </div>
 
         {/* ShoutCast & IceCast Server Plans */}
-        <h2 className="text-2xl font-semibold text-center mb-8">Streaming Server Hosting</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8">NZ Streaming Server Hosting</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
           {/* ShoutCast Plans */}
           <div className="space-y-6">
@@ -171,13 +174,13 @@ const Pricing = () => {
                 <Radio className="h-5 w-5 text-secondary mr-2" />
                 <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-100">ShoutCast</Badge>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Basic Stream</h3>
+              <h3 className="text-xl font-semibold mb-2">Kiwi Stream</h3>
               <div className="text-3xl font-bold mb-4">$4.99<span className="text-lg text-gray-600">/mo</span></div>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 128 kbps Quality</li>
                 <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 50 Listeners</li>
-                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 5GB Storage</li>
-                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> AutoDJ Support</li>
+                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
+                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> NZ AutoDJ Support</li>
               </ul>
               <Button 
                 className="w-full" 
@@ -195,13 +198,13 @@ const Pricing = () => {
                 <Radio className="h-5 w-5 text-secondary mr-2" />
                 <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-100">ShoutCast</Badge>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Pro Stream</h3>
+              <h3 className="text-xl font-semibold mb-2">Tui Stream Pro</h3>
               <div className="text-3xl font-bold mb-4">$9.99<span className="text-lg text-gray-600">/mo</span></div>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 320 kbps Quality</li>
                 <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 200 Listeners</li>
-                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 20GB Storage</li>
-                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Mobile Streaming Apps</li>
+                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
+                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> NZ Mobile Apps</li>
               </ul>
               <Button 
                 className="w-full bg-secondary hover:bg-secondary/90" 
@@ -220,13 +223,13 @@ const Pricing = () => {
                 <Server className="h-5 w-5 text-secondary mr-2" />
                 <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">IceCast</Badge>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Basic Stream</h3>
+              <h3 className="text-xl font-semibold mb-2">Fantail Stream</h3>
               <div className="text-3xl font-bold mb-4">$4.99<span className="text-lg text-gray-600">/mo</span></div>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 128 kbps Quality</li>
                 <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 50 Listeners</li>
-                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 5GB Storage</li>
-                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> HTML5 Player</li>
+                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
+                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> NZ HTML5 Player</li>
               </ul>
               <Button 
                 className="w-full" 
@@ -244,13 +247,13 @@ const Pricing = () => {
                 <Server className="h-5 w-5 text-secondary mr-2" />
                 <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">IceCast</Badge>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Pro Stream</h3>
+              <h3 className="text-xl font-semibold mb-2">Moa Stream Pro</h3>
               <div className="text-3xl font-bold mb-4">$9.99<span className="text-lg text-gray-600">/mo</span></div>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 320 kbps Quality</li>
                 <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 200 Listeners</li>
-                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> 20GB Storage</li>
-                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Custom Branding</li>
+                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Unlimited Bandwidth</li>
+                <li className="flex items-center"><Check className="h-5 w-5 text-secondary mr-2" /> Custom NZ Branding</li>
               </ul>
               <Button 
                 className="w-full bg-secondary hover:bg-secondary/90" 
@@ -264,12 +267,12 @@ const Pricing = () => {
 
         {/* FAQ or CTA section could go here */}
         <div className="text-center mt-16">
-          <h3 className="text-xl font-semibold mb-4">Need a custom solution?</h3>
+          <h3 className="text-xl font-semibold mb-4">Need a custom NZ solution?</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Contact our sales team for enterprise-grade hosting solutions tailored to your specific requirements.
+            Contact our NZ-based sales team for enterprise-grade hosting solutions tailored to your specific requirements.
           </p>
           <Button variant="outline" onClick={() => navigate("/contact")}>
-            Contact Sales
+            Contact NZ Sales
           </Button>
         </div>
       </div>

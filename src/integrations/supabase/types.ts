@@ -65,6 +65,27 @@ export type Database = {
           },
         ]
       }
+      chat_messages: {
+        Row: {
+          content: string
+          created_at: string
+          id: string
+          user_id: string
+        }
+        Insert: {
+          content: string
+          created_at?: string
+          id?: string
+          user_id: string
+        }
+        Update: {
+          content?: string
+          created_at?: string
+          id?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       comments: {
         Row: {
           content: string
@@ -99,6 +120,42 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      companies: {
+        Row: {
+          balance: number
+          created_at: string
+          description: string | null
+          employees: number
+          id: string
+          industry: string
+          level: number
+          name: string
+          owner_id: string
+        }
+        Insert: {
+          balance?: number
+          created_at?: string
+          description?: string | null
+          employees?: number
+          id?: string
+          industry: string
+          level?: number
+          name: string
+          owner_id: string
+        }
+        Update: {
+          balance?: number
+          created_at?: string
+          description?: string | null
+          employees?: number
+          id?: string
+          industry?: string
+          level?: number
+          name?: string
+          owner_id?: string
+        }
+        Relationships: []
       }
       conversations: {
         Row: {
@@ -556,6 +613,36 @@ export type Database = {
           },
         ]
       }
+      users: {
+        Row: {
+          address: string
+          created_at: string | null
+          domain: string
+          email: string
+          id: number
+          password: string
+          phone: string
+        }
+        Insert: {
+          address: string
+          created_at?: string | null
+          domain: string
+          email: string
+          id?: number
+          password: string
+          phone: string
+        }
+        Update: {
+          address?: string
+          created_at?: string | null
+          domain?: string
+          email?: string
+          id?: number
+          password?: string
+          phone?: string
+        }
+        Relationships: []
+      }
       videos: {
         Row: {
           created_at: string | null
@@ -603,6 +690,10 @@ export type Database = {
       }
       is_server_admin: {
         Args: { server_id: string }
+        Returns: boolean
+      }
+      player_has_company: {
+        Args: { player_id: string }
         Returns: boolean
       }
       update_server_status: {
