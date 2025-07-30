@@ -55,14 +55,33 @@ const Payment = () => {
       return;
     }
     
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(customerDetails.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
     setIsProcessing(true);
     
-    // Simulate payment processing
+    // WARNING: This is a demo implementation only!
+    // In production, you MUST:
+    // 1. Use a secure payment processor (Stripe, PayPal, etc.)
+    // 2. Never handle credit card data directly
+    // 3. Use HTTPS and proper encryption
+    // 4. Implement proper PCI compliance
+    // 5. Use server-side payment processing
+    
+    // Simulate secure payment processing
     setTimeout(() => {
       setIsProcessing(false);
       toast({
         title: "Payment Successful",
-        description: `Your ${selectedPlan} plan is now active.`
+        description: `Your ${selectedPlan} plan is now active. You will receive a confirmation email shortly.`
       });
       navigate("/client", { state: { customerDetails, plan: selectedPlan } });
     }, 2000);
