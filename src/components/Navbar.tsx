@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            BudgetHost
+            Hosting 4 You XYZ
           </span>
         </Link>
         <div className="flex items-center space-x-6">
