@@ -21,6 +21,12 @@ const Navbar = () => {
           <Link to="/features" className="text-gray-600 hover:text-gray-900 transition-colors">
             Features
           </Link>
+          <Link to="/contact-nz" className="text-gray-600 hover:text-gray-900 transition-colors">
+            Contact NZ
+          </Link>
+          <Link to="/jobs" className="text-gray-600 hover:text-gray-900 transition-colors">
+            Jobs
+          </Link>
           {isAdmin && (
             <Link to="/admin" className="text-gray-600 hover:text-gray-900 transition-colors">
               Admin

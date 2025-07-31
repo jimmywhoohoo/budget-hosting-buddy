@@ -14,6 +14,8 @@ import Payment from "./pages/Payment";
 import Client from "./pages/Client";
 import Admin from "./pages/Admin";
 import Auth from "./pages/Auth";
+import ContactNZ from "./pages/ContactNZ";
+import Jobs from "./pages/Jobs";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/features" element={<Features />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/contact-nz" element={<ContactNZ />} />
+            <Route path="/jobs" element={<Jobs />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/payment" element={
               <ProtectedRoute>
